@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Outubro Rosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container cabecalho">
+            <a href="index.html" class="logo">
+                <span class="laco">🎀</span>
+                <span>
+                    Outubro Rosa
+                    <small>Informação que Salva Vidas</small>
+                </span>
+            </a>
+        </div>
+
+        <nav aria-label="Menu principal">
+            <div class="container menu">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="prevencao.html">Prevenção</a>
+                <a href="sinais.html">Sinais de Alerta</a>
+                <a href="links.html">Links Úteis</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1 class="titulo-pagina">Entre em Contato</h1>
+
+        <section class="sobre-texto">
+            <h2>Estamos aqui para ouvir você!</h2>
+
+            <p>
+                A informação é uma das principais ferramentas na luta contra
+                o câncer de mama. Entre em contato para enviar sugestões,
+                dúvidas ou mensagens de apoio à campanha Outubro Rosa.
+            </p>
+        </section>
+
+        <form class="formulario" action="#" method="post">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Digite seu e-mail" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto"
+                   placeholder="Digite o assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5"
+                      placeholder="Escreva sua mensagem..."
+                      required></textarea>
+
+            <button type="submit" class="botao">
+                Enviar Mensagem
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="container rodape">
+            <p><strong>Outubro Rosa – Informação que Salva Vidas</strong></p>
+            <p>Desenvolvido por: Davi Mascher Angelo | 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

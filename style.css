@@ -1,0 +1,548 @@
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+html {
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 94%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+header {
+    background-color: #ffe5ee;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e43d75;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo .laco {
+    font-size: 38px;
+}
+
+.logo small {
+    display: block;
+    font-size: 11px;
+    color: #a83c60;
+    font-weight: normal;
+}
+
+/* =================================
+   MENU DE NAVEGAÇÃO
+================================= */
+
+nav {
+    background-color: #f8b9ce;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #e96b96;
+    color: white;
+}
+
+.menu a.ativo {
+    background-color: #e96b96;
+    color: white;
+    font-weight: bold;
+}
+
+/* =================================
+   PÁGINA INICIAL
+================================= */
+
+.banner-inicial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 20px;
+    min-height: 300px;
+}
+
+.banner-texto {
+    padding: 10px;
+}
+
+.banner-texto h1 {
+    color: #e43d75;
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.banner-imagem {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* =================================
+   BOTÕES
+================================= */
+
+.botao {
+    display: inline-block;
+    background-color: #e75480;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #c93668;
+}
+
+/* =================================
+   CARTÕES DA PÁGINA INICIAL
+================================= */
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px 10px 30px;
+}
+
+.cartao {
+    background-color: #fff0f5;
+    border-radius: 7px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.cartao .icone {
+    font-size: 35px;
+    color: #e43d75;
+    margin-bottom: 5px;
+}
+
+.cartao h3 {
+    color: #d93670;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.cartao p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.cartao a {
+    color: #d93670;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cartao a:hover {
+    text-decoration: underline;
+}
+
+/* =================================
+   TÍTULOS DAS PÁGINAS
+================================= */
+
+.titulo-pagina {
+    color: #e43d75;
+    font-size: 28px;
+    margin: 25px 0 20px;
+}
+
+/* =================================
+   PÁGINA SOBRE
+================================= */
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 20px 0 30px;
+}
+
+.sobre-imagem {
+    width: 100%;
+    height: 230px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sobre-texto h2 {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.sobre-texto p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* =================================
+   FATORES DE RISCO
+================================= */
+
+.fatores-risco {
+    margin: 30px 0;
+    padding: 15px 5px;
+}
+
+.fatores-risco h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.fatores-risco ul {
+    padding-left: 30px;
+}
+
+.fatores-risco li {
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.observacao {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* =================================
+   PÁGINA SINAIS DE ALERTA
+================================= */
+
+.sinais-conteudo {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sinais-imagem {
+    width: 100%;
+    height: 250px;
+    background-color: #fff0f5;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.sinais-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista-sinais h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.lista-sinais ul {
+    padding-left: 22px;
+}
+
+.lista-sinais li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.lista-sinais li::marker {
+    color: #e75480;
+}
+
+/* =================================
+   AVISO IMPORTANTE
+================================= */
+
+.aviso {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: #ffe5ee;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 25px 0;
+}
+
+.aviso-icone {
+    background-color: #e75480;
+    color: white;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.aviso h2 {
+    color: #d93670;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.aviso p {
+    font-size: 14px;
+}
+
+/* =================================
+   FORMULÁRIO DE CONTATO
+================================= */
+
+.formulario {
+    background-color: #fff0f5;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    color: #c93668;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #e8b5c6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 1px solid #e75480;
+}
+
+.formulario button {
+    align-self: flex-start;
+}
+
+/* =================================
+   LINKS ÚTEIS
+================================= */
+
+.conteudo {
+    padding: 20px 0 35px;
+}
+
+.conteudo h2 {
+    color: #d93670;
+    margin-bottom: 15px;
+}
+
+.conteudo > p {
+    margin-bottom: 15px;
+}
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    background-color: #f8c5d5;
+    padding: 12px;
+    margin-top: auto;
+}
+
+.rodape {
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+}
+
+.rodape p {
+    margin: 2px 0;
+}
+
+/* =================================
+   RESPONSIVIDADE - TABLETS
+================================= */
+
+@media (max-width: 768px) {
+
+    .banner-inicial {
+        gap: 20px;
+    }
+
+    .banner-texto h1 {
+        font-size: 26px;
+    }
+
+    .sobre-conteudo,
+    .sinais-conteudo {
+        grid-template-columns: 1fr 1.3fr;
+        gap: 18px;
+    }
+
+    .destaques {
+        gap: 10px;
+    }
+
+    .menu a {
+        padding: 10px 12px;
+    }
+}
+
+/* =================================
+   RESPONSIVIDADE - CELULARES
+================================= */
+
+@media (max-width: 550px) {
+
+    .cabecalho {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo .laco {
+        font-size: 32px;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .banner-inicial {
+        grid-template-columns: 1fr;
+        padding: 25px 10px;
+        gap: 20px;
+    }
+
+    .banner-texto h1 {
+        font-size: 27px;
+    }
+
+    .banner-imagem {
+        height: 210px;
+    }
+
+    .destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-conteudo,
+    .sinais-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagem,
+    .sinais-imagem {
+        height: 220px;
+    }
+
+    .titulo-pagina {
+        font-size: 24px;
+    }
+
+    .aviso {
+        align-items: flex-start;
+    }
+
+}
